@@ -1,0 +1,77 @@
+.marble {
+    background-image: url(../../images/Pattern\ marble\ page.png);
+    background-size: 50%;
+    background-position: right;
+    background-repeat: repeat-y;
+
+    h3 {
+        color: var(--dark-color);
+        font-weight: bold;
+    }
+
+    .more-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .photo {
+            position: relative;
+            width: 70%;
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+
+        .overlay::before {
+            content: attr(data-work);
+            position: absolute;
+            background-color: var(--main-color);
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            transition: .3s;
+            font-size: 1.5rem;
+            opacity: 0;
+            transform: translateX(-10%);
+
+        }
+
+        .overlay:hover::before {
+            transform: translateX(0);
+            opacity: .7;
+        }
+    }
+
+    .txt {
+        .p-list {
+
+            font-family:ex-bold1;
+            font-size:26px;
+            color: var(--dark-color);
+            
+        }
+
+        img {
+            transform: scale(.8);
+        }
+    }
+
+    p {
+        font-family:mediam1;
+        font-size: 22px;
+        color: var(--dark-color);
+        max-width: 90%;
+    }
+
+    .adv-txt {
+        color: var(--main-color);
+        font-family:mediam1;
+        font-size: 25px;
+    }
+}

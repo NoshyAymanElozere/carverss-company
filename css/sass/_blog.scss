@@ -1,0 +1,84 @@
+.blog {
+    background-image: url(../../images/Pattern\ Blog\ page.png);
+    background-repeat: repeat-y;
+    background-position: left;
+    background-size: 60%;
+
+    h3 {
+        color: var(--dark-color);
+        font-family:bold1;
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+        color: var(--dark-color);
+        font-family: bold1;
+    }
+
+    p {
+        color: var(--dark-color);
+        font-size: 25px;
+        font-family:reguler1;
+    }
+    p:hover {
+        color: var(--brown-color);
+    }
+
+    .photo-hover {
+        position: relative;
+
+        .overlay {
+            position: absolute;
+            background-color: var(--dark-color);
+            width: 74%;
+            height: 66%;
+            top: 49%;
+            right: -23%;
+            transform: translate(-50%, -50%);
+            transition: 0.3s;
+            opacity: 0.02;
+            border: 10px;
+        }
+
+        .overlay:hover {
+            opacity: 0;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    button {
+        margin-right: 65%;
+        border: none;
+        padding: 8px 40px;
+        font-size: 20px;
+        color: white;
+        border-radius: 10px;
+        background-color: var(--main-color);
+
+        a {
+            text-decoration: none;
+            color: var(--light-color);
+            font-weight: bold;
+
+        }
+
+
+    }
+
+    button:hover {
+        background-color: var(--brown-color);
+        box-shadow: 2px 2px 2px 2px #d2ccc0;
+        transform: scale(1.2);
+
+        a {
+            color: white;
+        }
+
+    }
+
+
+}

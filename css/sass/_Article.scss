@@ -1,0 +1,31 @@
+ .article {
+     background-image: url(../../images/Pattern\ article\ page.png);
+     background-position: right;
+     background-size: 50%;
+     background-repeat: repeat-y;
+     background-color: var(--section-color);
+
+     .single-photo {
+         max-width: 80%;
+         margin: auto;
+     }
+
+     .txt-info {
+         p {
+             color: var(--dark-color);
+             font-size: 30px;
+             font-family: mediam1;
+
+         }
+     }
+
+     .logo {
+         position: relative;
+         direction: ltr;
+         padding-bottom: 50px;
+     }
+
+
+
+
+ }
